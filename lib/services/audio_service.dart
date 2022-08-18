@@ -10,7 +10,7 @@ final List<HomeAudio> myList = const [
       subtitle: "هشام عباس",
       audioPath: 'sounds/002.mp3'),
   HomeAudio(
-      title: "الرقية الشرعية",
-      subtitle: "الرقية الشرعية ",
+      title: "سورة النازعات",
+      subtitle: "القارئ رعد الكردي",
       audioPath: 'sounds/003.mp3'),
 ];
