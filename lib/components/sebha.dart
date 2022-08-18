@@ -15,8 +15,8 @@ class _SebhaState extends State<Sebha> {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/images/background.jpg'),
-        ),
+            image: AssetImage('assets/images/background.jpg'),
+            fit: BoxFit.cover),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -51,7 +51,7 @@ class _SebhaState extends State<Sebha> {
               });
             },
             style: ElevatedButton.styleFrom(
-              primary: Colors.green,
+              primary: Color(0xff2e534c),
               fixedSize: const Size(100, 100),
               shape: const CircleBorder(),
             ),

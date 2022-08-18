@@ -23,12 +23,12 @@ class _AudioPlayerCardState extends State<AudioPlayerCard> {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/images/background.jpg'),
-        ),
+            image: AssetImage('assets/images/background.jpg'),
+            fit: BoxFit.cover),
       ),
       child: Card(
           margin: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-          color: Colors.green.shade200,
+          color: Color(0xff2e534c),
           child: Column(
             children: [
               Image.asset(
@@ -39,14 +39,20 @@ class _AudioPlayerCardState extends State<AudioPlayerCard> {
               Spacer(
                 flex: 2,
               ),
-              Text(title),
-              Text(subtitle),
+              Text(
+                title,
+                style: TextStyle(color: Colors.white),
+              ),
+              Text(
+                subtitle,
+                style: TextStyle(color: Colors.white),
+              ),
               Spacer(
                 flex: 1,
               ),
               Divider(
                 thickness: 1,
-                color: Colors.black,
+                color: Colors.white,
                 indent: 16,
                 endIndent: 16,
               ),
@@ -66,7 +72,10 @@ class _AudioPlayerCardState extends State<AudioPlayerCard> {
                         playing = true;
                       });
                     },
-                    icon: Icon(Icons.arrow_back_ios_new),
+                    icon: Icon(
+                      Icons.arrow_back_ios_new,
+                      color: Colors.white,
+                    ),
                   ),
                   IconButton(
                     onPressed: () {
@@ -85,7 +94,10 @@ class _AudioPlayerCardState extends State<AudioPlayerCard> {
                         }
                       });
                     },
-                    icon: Icon(ico),
+                    icon: Icon(
+                      ico,
+                      color: Colors.white,
+                    ),
                   ),
                   IconButton(
                     onPressed: () {
@@ -100,7 +112,10 @@ class _AudioPlayerCardState extends State<AudioPlayerCard> {
                         playing = true;
                       });
                     },
-                    icon: Icon(Icons.arrow_forward_ios),
+                    icon: Icon(
+                      Icons.arrow_forward_ios,
+                      color: Colors.white,
+                    ),
                   ),
                 ],
               ),

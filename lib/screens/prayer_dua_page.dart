@@ -9,7 +9,7 @@ class PrayerDuaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.green.shade400,
+          backgroundColor: Color(0xff2e534c),
           leading: Icon(Icons.mosque),
           title: Text('Prayer Dua\'s'),
         ),

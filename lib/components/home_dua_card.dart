@@ -9,7 +9,7 @@ class HomeDuaCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       margin: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-      color: Colors.green.shade200,
+      color: Color(0xff2e534c),
       child: InkWell(
         onTap: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -17,9 +17,18 @@ class HomeDuaCard extends StatelessWidget {
           }));
         },
         child: ListTile(
-          leading: Icon(homeDuaCard.duaIcon),
-          title: Text(homeDuaCard.title),
-          subtitle: Text(homeDuaCard.subtitle),
+          leading: Icon(
+            homeDuaCard.duaIcon,
+            color: Colors.white,
+          ),
+          title: Text(
+            homeDuaCard.title,
+            style: TextStyle(color: Colors.white),
+          ),
+          subtitle: Text(
+            homeDuaCard.subtitle,
+            style: TextStyle(color: Colors.white),
+          ),
         ),
       ),
     );

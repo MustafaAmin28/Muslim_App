@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: Text("Muslim App"),
           leading: Icon(Icons.mosque),
-          backgroundColor: Colors.green,
+          backgroundColor: Color(0xff2e534c),
           bottom: TabBar(
             tabs: [
               Tab(
@@ -44,8 +44,8 @@ class _HomePageState extends State<HomePage> {
             Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/background.jpg'),
-                ),
+                    image: AssetImage('assets/images/background.jpg'),
+                    fit: BoxFit.cover),
               ),
               child: ListView.builder(
                 itemCount: homeDuaCard.length,

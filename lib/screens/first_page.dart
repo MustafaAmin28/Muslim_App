@@ -22,8 +22,9 @@ class FirstPage extends StatelessWidget {
               radius: 70,
               backgroundColor: Colors.white,
               child: CircleAvatar(
+                backgroundColor: Color(0xff2e534c),
                 radius: 68,
-                backgroundImage: AssetImage('Images/Avatar.jpg'),
+                backgroundImage: AssetImage('assets/images/avatar.png'),
               ),
             ),
             const Text(
@@ -37,7 +38,7 @@ class FirstPage extends StatelessWidget {
             Text(
               'Flutter Developer',
               style: TextStyle(
-                color: Colors.yellow.shade600,
+                color: Colors.white,
                 fontSize: 22,
                 fontFamily: 'Mouse Memoirs',
                 fontWeight: FontWeight.bold,
@@ -54,7 +55,7 @@ class FirstPage extends StatelessWidget {
               child: ListTile(
                 leading: Icon(
                   Icons.phone,
-                  color: Colors.green,
+                  color: Color(0xff2e534c),
                 ),
                 title: Text("+201125586333"),
               ),
@@ -64,14 +65,14 @@ class FirstPage extends StatelessWidget {
               child: ListTile(
                 leading: Icon(
                   Icons.email,
-                  color: Colors.green,
+                  color: Color(0xff2e534c),
                 ),
                 title: Text("myEmail@gmail.com"),
               ),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: Colors.green.shade500,
+                primary: Color(0xff2e534c),
                 minimumSize: Size(60, 30),
               ),
               onPressed: () {

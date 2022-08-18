@@ -7,8 +7,8 @@ class DuaCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 5),
-      color: Colors.green.shade300,
+      margin: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+      color: Color(0xff2e534c),
       child: Column(
         children: [
           Padding(
@@ -25,7 +25,7 @@ class DuaCard extends StatelessWidget {
                   dua.header,
                   textDirection: TextDirection.rtl,
                   style: const TextStyle(
-                      color: Colors.black,
+                      color: Colors.white,
                       fontSize: 18,
                       fontWeight: FontWeight.bold),
                 )
@@ -34,31 +34,38 @@ class DuaCard extends StatelessWidget {
           ),
           const Divider(
             thickness: 1,
-            color: Colors.black,
+            color: Colors.white,
             indent: 6,
             endIndent: 6,
           ),
           Container(
-            color: Colors.green.shade200,
+            color: Color(0xff2e534c),
             height: 150,
             width: double.infinity,
             child: SingleChildScrollView(
               scrollDirection: Axis.vertical,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  Text(
-                    dua.title,
-                    textDirection: TextDirection.rtl,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Text(
+                      dua.title,
+                      textDirection: TextDirection.rtl,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
-                  Text(
-                    dua.description,
-                    textDirection: TextDirection.rtl,
-                  )
-                ],
+                    Text(
+                      dua.description,
+                      textDirection: TextDirection.rtl,
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           )
